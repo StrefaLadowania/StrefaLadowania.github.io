@@ -1,0 +1,27 @@
+body {
+    background-color:aquamarine
+}
+
+#showernotagrower {
+    position:relative;
+    margin-left:10%;
+    width: 80%;
+    height: 40px;
+    border: 2px solid black;
+}
+
+#jstext {
+    font-weight:700;
+    position:relative;
+    text-align:center;
+    top:50px;
+    border: 1px solid red;
+    font-size: 50px;
+    background-color: lightblue
+}
+
+hr {
+  height: 4px;
+  color: red;
+  background-color:red;
+}

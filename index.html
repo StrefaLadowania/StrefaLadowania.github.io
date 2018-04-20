@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Nacisnij przycisk ponizej by wylosowac miejsce w Fortnite!*</h1>
+<button onclick="showResponse()" id="showernotagrower">Where we landing boy?</button>
+<div id="jsresponse">
+<script>
+var dropZones = ["Wailing Woods", "Flush Factory", "Shifty Shafts", "Moisty Mire", "Tomato Town", "Loot Lake", "Haunted Hills", "Junk Junction", "Greasy Grove", "Lonely Lodge", "Dusty Depot", "Fatal Fields", "Snobby Shores", "Anarchy Acres", "Salty Springs", "Tilted Towers", "Pleasant Park", "Retail Row"];
+var response = dropZones[Math.floor(Math.random()*dropZones.length)];
+var times = 1;
+
+function showResponse() {
+document.body.appendChild(document.createElement('p'));
+document.querySelector("body p:last-child").id = "jstext";
+document.querySelector("#jstext").innerHTML = response;
+
+times = times + 1
+checker()
+}
+
+function checker() {
+if(times > 2) {
+  location.reload()
+}
+}
+</script>
+</div>
+<hr>
+<h2>*Renoz to chuj, wiec nie moze uzywac tej strony.</h2>
+</body>
+</html>
